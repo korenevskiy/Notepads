@@ -169,7 +169,7 @@ jobs:
       - if: steps.step_conditionals_handler.outputs.is_push_to_master == 'true'
         name: Upload build artifacts
         id: upload_artifacts
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2.2.2
         with:
           name: Build artifacts
           path: Artifacts/
